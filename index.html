@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tour in China | HomePage</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css1/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css1/noscript.css" /></noscript>
+		<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+
+		<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+		<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+		<script src="https://cdn.amcharts.com/lib/4/plugins/forceDirected.js"></script> 
+		<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+		<style>
+			#myVideo {
+				position:absolute;
+				right: 0;
+				bottom: 0;
+				min-width: 100%;
+				min-height: 100%;
+				text-align: center;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var username = prompt("enter your name");
+				document.getElementById('title').innerHTML = "Hello, " + username + " Welcome to a tour in China"
+			}
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+					<h1>
+						<div class="logo">
+							<a href="index.html">
+							<i class="fa-solid fa-house fa-2x"></i>
+							</a>
+						</div>
+					</h1>
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+				
+				<!-- Menu -->
+				<nav id="menu">
+					<div class="inner">
+						<h2>Menu</h2>
+						<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">Food</a></li>
+								<li><a href="cities.html">Cities</a></li>
+								<li><a href="culture.html">Culture</a></li>
+								<li><a href="credits.html">credit</a></li>
+						</ul>
+						<a href="#" class="close">Close</a>
+					</div>
+				</nav>
+
+				<!-- Banner -->
+				<section id="banner">
+					<div class="inner">
+						<video autoplay muted loop id="myVideo">
+							<source src="travel.mp4" type="video/mp4">
+						</video>
+					<h2 id="title"></h2>
+					<p id="tag-line">Our Personal Brochure For A Trip In China</p>
+					</div>
+				</section>
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/food.jpg" alt="food" /></a>
+									<div class="content">
+										<h2 class="major">Food</h2>
+										<p>Chinese food, rich and colorful, has diversified color, aromatic flavor, and excellent taste as its main features. With these three characteristics, it is not only tasty but also a work of art for people to appreciate.
+
+											To make real Chinese dishes, none of the three characteristics - color, aroma and delicious taste should be excluded.</p>
+										<a href="generic.html" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="imageJ/hangzhou.jpg" alt="cities" /></a>
+									<div class="content">
+										<h2 class="major">Cities</h2>
+										<p>Stretching 5,250 kilometres from east to west, China is almost the size of Europe. And with landscapes ranging from the dramatic limestone formations of Guilin to the arid Gobi Desert – it certainly seems like several countries rolled into one. This vast land is also home to many fascinating cities!</p>
+										<a href="cities.html" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+							
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="imageD/pic03.jpg" alt="culture" /></a>
+									<div class="content">
+										<h2 class="major">Culture</h2>
+										<p>China has a long and rich history and a diverse culture. Some of the most notable aspects of Chinese culture include its traditional sports, its focus on family and community, and its emphasis on respecting their long history of musical instruments and clothings. Additionally, the country has a strong tradition of art and literature, and is home to many world-renowned museums, temples, and historical sites.</p>
+										<a href="culture.html" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+					</section>
+					<div id="chartdiv">
+						<script src="tree.js"></script>
+					</div>
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; 2022 Yukun Shan, Chongjun Shan, Decheng Zheng. All Rights Reserved <a href="credits.html">Credit</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+			<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+			<script>
+				new TypeIt("#title", {
+				strings: "",
+				speed: 75,
+				waitUntilVisible: true,
+				}).go();
+			</script>
+			
+			<script>
+				new TypeIt("#tag-line", {
+				strings: "",
+				speed: 75,
+				waitUntilVisible: true,
+				}).go();
+			</script>
+	</body>
+</html>
